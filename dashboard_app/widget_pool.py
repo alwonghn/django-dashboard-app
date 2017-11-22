@@ -35,6 +35,8 @@ class DashboardWidgetPool(object):
             return
         load('dashboard_widgets')
         self.discovered = True
+        # added on 171121
+        return
 
     def get_widgets(self):
         """Discovers all widgets and returns them."""

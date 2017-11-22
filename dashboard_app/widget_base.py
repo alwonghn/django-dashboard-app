@@ -18,7 +18,8 @@ class DashboardWidgetBase(object):
           register the same widget class several times with different names.
 
         """
-        for key, value in kwargs.iteritems():
+        # for key, value in kwargs.iteritems():
+        for key, value in kwargs.items():
             setattr(self, key, value)
 
     def get_context_data(self):
